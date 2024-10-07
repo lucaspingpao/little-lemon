@@ -5,10 +5,12 @@ function ConfirmedBooking() {
   const [queryParameters] = useSearchParams();
   return (
     <div className="confirmed-container">
-      <h2>Confirmed Booking!</h2>
       <table>
         <thead>
-          <tr><th>Information</th></tr>
+          <tr>
+            <th>Confirmed Booking!</th>
+          </tr>
+          <tr>&nbsp;</tr>
         </thead>
         <tbody>
           <tr>

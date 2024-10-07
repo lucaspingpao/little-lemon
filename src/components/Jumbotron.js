@@ -10,7 +10,7 @@ function Jumbotron() {
       <div>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
-        <p>Lorem Ipsum</p>
+        <br/>
         <button onClick={() => { navigate('/booking') }}>Reserve Table</button>
       </div>
       <div>

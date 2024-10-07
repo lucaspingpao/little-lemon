@@ -41,7 +41,7 @@ function BookingForm(props) {
   }
 
   return (
-    <div>
+    <div className="booking-container">
       <form>
         <label htmlFor="res-date">Choose date</label>
         <input
@@ -51,7 +51,7 @@ function BookingForm(props) {
           onChange={handleDateChange}
         />
         {dateError &&
-          <div class="error">{dateError}</div>
+          <div className="error">{dateError}</div>
         }
 
         <label htmlFor="res-time">Choose time</label>

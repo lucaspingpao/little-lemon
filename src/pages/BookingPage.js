@@ -7,7 +7,7 @@ import { fetchAPI, submitAPI } from '../functions/utils';
 function BookingPage() {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [guests, setGuests] = useState(1);
+  const [guests, setGuests] = useState("1");
   const [occasion, setOccasion] = useState("Birthday");
 
   const navigate = useNavigate();
@@ -26,10 +26,6 @@ function BookingPage() {
   }
 
   const [state, dispatch] = useReducer(reducer, { availableTimes: [] });
-
-  useEffect(() => {
-    console.log("main page", date, time, guests, occasion, state);
-  });
 
   const submitForm = (formData) => {
     if (submitAPI(formData)) {

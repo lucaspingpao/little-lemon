@@ -23,11 +23,9 @@ function Specials() {
 
   return (
     <div className="specials-container">
-      <div>
-        <h1>Specials</h1>
-        <Button label="On the menu"/>
-      </div>
-      <div>
+      <h1>Specials</h1>
+      <br/>
+      <div className="specials-cards">
         {specials.map((special, idx) => {
           return (
             <SpecialsCard
