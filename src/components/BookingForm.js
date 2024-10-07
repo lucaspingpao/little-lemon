@@ -42,6 +42,8 @@ function BookingForm(props) {
 
   return (
     <div className="booking-container">
+      <h1>Book Now</h1>
+      <br/>
       <form>
         <label htmlFor="res-date">Choose date</label>
         <input
